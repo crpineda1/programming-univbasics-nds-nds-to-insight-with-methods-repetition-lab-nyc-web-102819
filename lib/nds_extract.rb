@@ -53,13 +53,11 @@ def total_gross(source)
   gross = directors_totals(source)
 
   while num < directors.count do
-    if gross.include?(directors[num]) do
+    if gross.include?(directors[num])
       total += gross[directors[num]]
       num += 1
     else
       num += 1
-    end
-
   end
   total
 end
