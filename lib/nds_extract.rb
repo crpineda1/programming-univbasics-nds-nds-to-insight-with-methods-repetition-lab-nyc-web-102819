@@ -47,10 +47,20 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
 
-#  num = 0
-#  total = 0
-#  while num < source.count do
+  num = 0
+  total = 0
+  directors = list_of_directors(source)
+  gross = directors_totals(source)
 
-#  end
-p source  
+  while num < source.count do
+    if gross.include?(directors[num]) do
+      total += gross[directors[num]
+      num += 1
+    else
+      num += 1
+    end
+    num += 1
+ 
+  end
+
 end
